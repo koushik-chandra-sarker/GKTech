@@ -1,13 +1,78 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+.navbar{
+  background: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.9rem;
+  color: #EC407A !important;
+}
+.GK{
+  color: #FFAA00;
+}
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #386787;
+}
+.btn-get-started{
+border-radius: 45px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#header{
+  width: 100%;
+  /*height: 80vh;*/
+  margin-top: 70px;
+
+}
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+#header h5{
+  font-size: 24px;
+  color: #464646;
+}
+.brand-name{
+  color: #FFAA00;
+}
+#header .img-animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }100%{
+  transform: translateY(-10px);
+     }
+}
+@keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }100%{
+     transform: translateY(-10px);
+   }
+}
+main{
+  min-height: calc(100vh - 71.6px - 44px);
+}
+footer{
+  height: 60px;
+}
+@media (min-width: 768px) {
+  #header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px;
+
+  }
 }
